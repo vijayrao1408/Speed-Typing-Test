@@ -12,7 +12,7 @@ let value = null;
 let intervalId;
 
 function timer(){
-   setInterval(function(){
+   intervalId = setInterval(function(){
     count = count+1;
     timerEl.textContent = count+" " + "seconds";
 }, 1000); 
@@ -55,5 +55,6 @@ resetBtnEl.addEventListener("click", function(){
     quoteDisplayEl.textContent = "";
     getRandomJokes();
     count = -1;
+   timer();
     clearInterval(intervalId);
 });

@@ -42,7 +42,7 @@ function getRandomJokes(){
 submitBtnEl.addEventListener("click", function(){
     let quoteInputVal = quoteInputEl.value;
     if (value === quoteInputVal){
-        resultEl.textContent = "You types in " + count + " seconds";
+        resultEl.textContent = "You typed in " + count + " seconds";
         clearInterval(intervalId);
     }
     if (value !== quoteInputVal){
